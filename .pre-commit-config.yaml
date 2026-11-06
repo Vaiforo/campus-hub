@@ -1,0 +1,11 @@
+minimum_pre_commit_version: '4.4.0'
+repos:
+  - repo: local
+    hooks:
+      - id: behave
+        name: Проверка поведения CampusHub
+        entry: python -m behave
+        language: unsupported
+        pass_filenames: false
+        always_run: true
+        stages: [pre-commit]
