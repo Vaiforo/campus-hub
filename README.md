@@ -155,7 +155,7 @@ pytest -m integration
 ```
 
 Testcontainers автоматически запускает PostgreSQL `postgres:16.6-alpine`
-и Apache Kafka из образа `confluentinc/cp-kafka:7.6.0` в режиме KRaft.
+и Apache Kafka `apache/kafka:3.9.1` в режиме KRaft.
 Отдельно устанавливать PostgreSQL, Kafka или ZooKeeper не требуется.
 Первый запуск загружает образы и требует доступа к реестру контейнеров.
 
