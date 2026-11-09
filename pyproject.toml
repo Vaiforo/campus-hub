@@ -28,4 +28,5 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 markers = ["integration: requires Docker to run PostgreSQL and Kafka"]
